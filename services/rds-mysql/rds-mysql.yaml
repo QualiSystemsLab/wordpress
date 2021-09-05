@@ -14,12 +14,11 @@ inputs:
   # It is recommended that you create a specific role with relevant permissions and provide its ARN here.
 
 module:
-  source: github.com/cloudshell-colony/terraform/rds-mysql
+  source: https://github.com/QualiSystemsLab/wordpress/rds-mysql
   # The source element is the location of your Terraform module,
   # Both public and private repos are supported
 
-
-terraform_version: 0.11.11
+terraform_version: 3.57.0
 variables:
   var_file: terraform.tfvars
   values:
