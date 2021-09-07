@@ -18,7 +18,7 @@ module:
   # The source element is the location of your Terraform module,
   # Both public and private repos are supported
 
-terraform_version: 3.57.0
+terraform_version: 1.0.3
 variables:
   var_file: terraform.tfvars
   values:
