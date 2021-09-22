@@ -1,6 +1,4 @@
 #!/bin/bash
-export WORDPRESS_DB_HOST="$DB_HOSTNAME:3306"
-
 # Copyright (c) 2017, 2021, Oracle and/or its affiliates.
 #
 # This program is free software; you can redistribute it and/or modify
