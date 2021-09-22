@@ -42,6 +42,8 @@ services:
         - DB_USER: $DB_USER
         - DB_PASS: $DB_PASS
         - SANDBOX_ID: $torque.environment.id
+        - VPC_ID: $colony.environment.virtual_network_id  # Sandbox VPC Id
+
         
 debugging:
   bastion_availability: enabled-on
