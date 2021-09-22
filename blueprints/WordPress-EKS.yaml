@@ -26,7 +26,7 @@ applications:
  - wordpress-EKS:
       input_values:
         - DB_HOSTNAME: $torque.services.rds-mysql.outputs.hostname
-        - WORDPRESS_DB_HOST: $torque.services.rds-mysql.outputs.hostname        
+        - WORDPRESS_DB_HOST: $torque.services.rds-mysql.outputs.hostname
         - WORDPRESS_DB_USER: $DB_USER
         - WORDPRESS_DB_PASSWORD: $DB_PASS
         - WORDPRESS_DB_NAME: $DB_NAME
