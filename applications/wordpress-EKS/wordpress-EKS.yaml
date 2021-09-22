@@ -1,6 +1,7 @@
 spec_version: 1
 kind: application
 inputs:
+  - WORDPRESS_DB_HOST
   - DB_HOSTNAME
   - WORDPRESS_DB_USER
   - WORDPRESS_DB_PASSWORD
