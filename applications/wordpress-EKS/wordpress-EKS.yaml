@@ -12,9 +12,9 @@ infrastructure:
           port: 80
   compute:
     spec:
-      kubernetes:
-        cpu: 250m
-        ram: 64Mi 
+       kubernetes:
+        cpu: 1000m
+        ram: 256Mi 
 configuration:
   start:
     command: docker-entrypoint.sh apache2-foreground
