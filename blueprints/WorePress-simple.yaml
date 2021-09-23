@@ -23,7 +23,7 @@ inputs:
 
 # These are the applications that will be deployed in this blueprint
 applications:
- - wordpress-EKS:
+  - wordpress-EKS:
       input_values:
         - WORDPRESS_DB_HOST: "${torque.services.rds-mysql.outputs.hostname}:3306"
         - WORDPRESS_DB_USER: $DB_USER
@@ -32,12 +32,10 @@ applications:
       # The wodpress site depends on MySQL and will start deploying
       # only when the database is ready
       depends_on:
-        - rds-mysql
-services:
-  - rds-mysql:  # One instance of mysql (see: services/rds-mysql/rds-mysql.yaml)
+        - mysql-EKS
+  - mysql-EKS:
       input_values:
-        - DB_NAME: $DB_NAME
-        - DB_USER: $DB_USER
-        - DB_PASS: $DB_PASS
-        - SANDBOX_ID: $torque.environment.id
-        - VPC_ID: vpc-0e1b62433c0c81943 # EKS cluster VPC Id
+        - MYSQL_ROOT_PASSWORD: $DB_PASS
+        - MYSQL_DATABASE: $DB_NAME
+        - MYSQL_USER: $DB_USER
+        - MYSQL_PASSWORD: $DB_PASS
