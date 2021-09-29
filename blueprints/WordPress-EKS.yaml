@@ -40,4 +40,3 @@ services:
         - DB_USER: $DB_USER
         - DB_PASS: $DB_PASS
         - SANDBOX_ID: $torque.environment.id
-        - VPC_ID: vpc-0e1b62433c0c81943 # EKS cluster VPC Id
