@@ -4,7 +4,7 @@ kind: blueprint
 
 metadata:
   description: >
-    wordpress on EKS
+    wordpress on EKS + RDS
 
 clouds:
   - AWS/EKS
