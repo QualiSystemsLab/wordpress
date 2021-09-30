@@ -26,4 +26,4 @@ source:
   image:    
     docker_image: 
        - name: wordpress
-         tag: latest
+         tag: 5.8.1-php7.4-apache
